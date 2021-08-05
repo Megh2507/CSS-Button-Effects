@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+   
+}
+a{
+    text-decoration: none;
+    padding:20px 10px;
+    background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+    color: white;
+    position: relative;
+
+}
+a::before {
+    content: "Visit Here!";
+    text-decoration: none;
+    padding:20px 10px;
+    background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+
+}
+a:hover::before{
+    transform: rotateX(0deg);
+}
+a::after {
+    content: "Visit Here!";
+    position: absolute;
+    text-decoration: none;
+    padding:20px 10px;
+    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+    color: white;
+   
+    top: 0%;
+    left: 0%;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+    transition-delay: 0.3s;
+
+}
+a:hover::after{
+    transform: rotateX(0deg);
+}
